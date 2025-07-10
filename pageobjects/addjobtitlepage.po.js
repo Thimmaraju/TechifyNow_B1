@@ -11,6 +11,7 @@ exports.AdminPage =  class AdminPage {
     await this.page.getByRole('link', { name: 'Admin' }).click();
     await this.page.getByText('Job').click();
     await this.page.getByRole('menuitem', { name: 'Job Titles' }).click();
+    //await this.page.getByRole('menuitem', { name: 'Job Titles' }).click();
   }
 
   async addJobTitle(titlePrefix) {
