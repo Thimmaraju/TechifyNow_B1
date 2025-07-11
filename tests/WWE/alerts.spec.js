@@ -6,7 +6,7 @@ test.describe('Automation - Working with Alerts', () => {
     await page.goto("https://the-internet.herokuapp.com/javascript_alerts");
   });
 
-  test.only('Playwright Test Case - Simple Alert', async ({ page }) => {
+  test('Playwright Test Case - Simple Alert', async ({ page }) => {
     // Trigger the alert
     page.locator('text=Click for JS Alert').click();
     //await page.waitForTimeout(5000)
